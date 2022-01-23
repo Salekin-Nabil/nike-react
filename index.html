@@ -6,19 +6,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike-React</title>
 
-    <!-- Bootstrap CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- header start -->
-    <header>
+    <!-- Google Fonts -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <style>
+      .btn-success{
+            background-color: #3D4FF3;
+        }
+      .round{
+          border-radius: 20px;
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+        }
+      .extra{
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+        }
+      .products:hover{
+          transform: scale(1.3);
+          transition: transform 1s ease-in-out;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body class="ms-lg-5" style="font-family: 'Roboto', sans-serif;">
+    <!-- header start -->
+    <header style="background-color: #FFFBF0;">
+      <nav class="navbar navbar-expand-lg navbar-light container-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="icons/Logo.png" alt="" width="100%" height="24"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item products">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item products">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item products">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item products">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+      <section class="container-lg py-5">
+        <div class="row row-cols-lg-2">
+          <div class="col-12 me-lg-auto py-5 pt-lg-0 order-lg-1 order-2">
+            <img class="ms-5 ms-lg-0 w-75" src="images/Group 33092.png" alt="">
+          </div>
+          <div class="d-flex flex-column col-12 col-lg-4 pt-lg-5 pt-0 order-lg-2 order-1">
+            <h1 style="font-family: 'Bebas Neue', cursive; width: 416px; height: 192px; font-size: 70px;" class="text-wrap"><span style="color:#FA804C;">Nike React</span> Infinity Run 2</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button type="submit" class="btn btn-success border-0 rounded-3" style="width: 170px; height: 60px;"><img src="icons/shopping-cart 1.png" alt="" style="width: 26px;"> BUY NOW</button>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- header end -->
     
     <!-- main start -->
-    <main>
-
+    <main style="background-color: white;">
+      <section class="container ms-3 ms-lg-5 ps-lg-5" style="margin-top: 130px">
+            <!----------- Casual Shoes ----------->
+            <h2 style="font-family: 'Bebas Neue', cursive;">CASUAL SHOES</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 my-lg-5 my-3">
+                <div class="col">
+                    <div class="card round border-0 p-1 p-lg-3 products" style="width: 370px; height: 550px; padding: 18px;">
+                        <div class="round d-flex justify-content-center" style="background-color: #F1F1F1;">
+                            <img style="width: 293px; height: 293px;" src="images/image 5.png" class="card-img-top p-4" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mt-3">Nike Shoe</h5>
+                          <p class="card-text pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h3 class="d-inline-block" style="font-size: 36px; font-weight: 900; color:#FA804C;">$234</h3>
+                                <button type="submit" class="btn btn-success rounded-3" style="width: 170px; height: 60px;"><img src="icons/shopping-cart 1.png" alt="" style="width: 26px;"> BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card round border-0 p-1 p-lg-3 products" style="width: 370px; height: 550px; padding: 18px;">
+                        <div class="round d-flex justify-content-center" style="background-color: #F1F1F1;">
+                            <img style="width: 293px; height: 293px;" src="images/Daco_1703273 1.png" class="card-img-top p-4" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mt-3">Sneakers Skate Shoe</h5>
+                          <p class="card-text pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h3 class="d-inline-block" style="font-size: 36px; font-weight: 900; color:#FA804C;">$234</h3>
+                                <button type="submit" class="btn btn-success rounded-3" style="width: 170px; height: 60px;"><img src="icons/shopping-cart 1.png" alt="" style="width: 26px;"> BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card round border-0 p-1 p-lg-3 products" style="width: 370px; height: 550px; padding: 18px;">
+                        <div class="round d-flex justify-content-center" style="background-color: #F1F1F1;">
+                            <img style="width: 293px; height: 293px;" src="images/pngegg 1.png" class="card-img-top p-4" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mt-3">Sneakers Basketball shoe</h5>
+                          <p class="card-text pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h3 class="d-inline-block" style="font-size: 36px; font-weight: 900; color:#FA804C;">$234</h3>
+                                <button type="submit" class="btn btn-success rounded-3" style="width: 170px; height: 60px;"><img src="icons/shopping-cart 1.png" alt="" style="width: 26px;"> BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------- Formal Shoes ------------->
+            <h2 style="font-family: 'Bebas Neue', cursive; margin-top: 99px;">FORMAL SHOES</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-1 mt-5">
+                <div class="col">
+                    <div class="card round border-0 p-1 p-lg-3 products" style="width: 370px; height: 550px; padding: 18px;">
+                        <div class="round d-flex justify-content-center">
+                            <img style="width: 293px; height: 293px;" src="images/Mask Group.png" class="card-img-top p-4" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mt-3">Prestige High-Cut Leather</h5>
+                          <p class="card-text pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h3 class="d-inline-block" style="font-size: 36px; font-weight: 900; color:#FA804C;">$234</h3>
+                                <button type="submit" class="btn btn-success rounded-3" style="width: 170px; height: 60px;"><img src="icons/shopping-cart 1.png" alt="" style="width: 26px;"> BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card round border-0 p-1 p-lg-3 products" style="width: 370px; height: 550px; padding: 18px;">
+                        <div class="round d-flex justify-content-center">
+                            <img style="width: 293px; height: 293px;" src="images/Rectangle 38.png" class="card-img-top p-4" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mt-3">Slip-On Formal Shoe</h5>
+                          <p class="card-text pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h3 class="d-inline-block" style="font-size: 36px; font-weight: 900; color:#FA804C;">$234</h3>
+                                <button type="submit" class="btn btn-success rounded-3" style="width: 170px; height: 60px;"><img src="icons/shopping-cart 1.png" alt="" style="width: 26px;"> BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card round border-0 p-1 p-lg-3 products" style="width: 370px; height: 550px; padding: 18px;">
+                        <div class="round d-flex justify-content-center">
+                            <img style="width: 293px; height: 293px;" src="images/Rectangle 39.png" class="card-img-top p-4" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mt-3">Slip-On Formal Shoe</h5>
+                          <p class="card-text pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <h3 class="d-inline-block" style="font-size: 36px; font-weight: 900; color:#FA804C;">$234</h3>
+                                <button type="submit" class="btn btn-success rounded-3" style="width: 170px; height: 60px;"><img src="icons/shopping-cart 1.png" alt="" style="width: 26px;"> BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <section class="container py-5 ms-4 ms-lg-5 ps-lg-5" style="margin-top: 130px;">
+        <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+            <div class="col order-lg-1 order-2">
+                <div class="d-lg-flex flex-lg-column">
+                    <div class="card mb-3 extra products border-0 w-100">
+                        <div class="row align-items-center px-4 py-3 g-0">
+                          <div class="col-md-4 d-flex justify-content-center">
+                            <img style="width: 78px;height: 82px;" src="icons/image 12.png" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8 text-center">
+                            <div class="card-body">
+                              <h5 class="card-title">Find the Perfect Fit</h5>
+                              <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 extra products border-0 w-100">
+                        <div class="row align-items-center px-4 py-3 g-0">
+                          <div class="col-md-4 d-flex justify-content-center">
+                            <img style="width: 78px;height: 82px;" src="icons/image 13.png" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8 text-center">
+                            <div class="card-body">
+                              <h5 class="card-title">Find the Perfect Fit</h5>
+                              <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 extra products border-0 w-100">
+                        <div class="row align-items-center px-4 py-3 g-0">
+                          <div class="col-md-4 d-flex justify-content-center">
+                            <img style="width: 78px;height: 82px;" src="icons/image 14.png" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8 text-center">
+                            <div class="card-body">
+                              <h5 class="card-title">Find the Perfect Fit</h5>
+                              <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-lg-auto order-lg-2 order-1 mb-5">
+                <img class="w-100" src="icons/XMLID 1.png" alt="">
+            </div>
+        </div>
+    </section>
     </main>
     <!-- main end -->
 
